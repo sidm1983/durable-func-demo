@@ -31,7 +31,7 @@ namespace Sid.DurableFunction
             ILogger log)
         {
             var postmanEcho = RestService.For<IPostmanEchoApi>("https://postman-echo.com");
-            var response = await postmanEcho.Post(new TagRequest(tags.ToArray()));
+            var response = await postmanEcho.Post(new TagRequest(tags));
             log.LogInformation($"Received response from Postman echo service: {response.Json.Objects.FirstOrDefault()}");
             
             return response;
