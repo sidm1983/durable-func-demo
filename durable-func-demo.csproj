@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.1.1" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.3" />
-    <PackageReference Include="refit" Version="5.0.23" />
+    <PackageReference Include="refit" Version="8.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
